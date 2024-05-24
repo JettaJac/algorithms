@@ -14,7 +14,7 @@ OBJS = $(SRCS:.c=.o)
 
 .PHONY: all clean s21_graph.a s21_graph_algorithms.a tests leaks gcov_report stylecheck
 
-all: clean s21_graph.a s21_algorithms.a
+all: clean console
 
 s21_graph.a:
 	$(CXX) $(TFLAGS) ./s21_graph/s21_graph.cc
